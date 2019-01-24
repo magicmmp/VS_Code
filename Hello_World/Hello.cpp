@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     cout<<"Hello VS Code!"<<endl;
-    vector<int> V;
+    vector<int> v;
     for(int i=10;i>0;i--)
         v.push_back(i);
     cout<<"The elements in vector:"<<endl;
