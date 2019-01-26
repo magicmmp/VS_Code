@@ -15,6 +15,5 @@ int main()
         cout<<" "<<e;
     cout<<endl;
 
-
     return 0;
 }
