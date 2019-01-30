@@ -1,1 +1,1 @@
-print("Hello vs code!\n")
+print("Hello py code!\n")

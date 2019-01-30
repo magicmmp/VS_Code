@@ -84,9 +84,9 @@ dopath(Myfunc func)
 	if ((dp = opendir(fullpath)) == NULL)	/* can't read directory */
 		return(func(fullpath, &statbuf, FTW_DNR));
 
-	while ((dirp = readdir(dp)) != NULL) {
-		if (strcmp(dirp->d_name, ".") == 0  ||
-		    strcmp(dirp->d_name, "..") == 0)
+	while ((dirp = readdir(dp)) != NULL) 
+	{
+		if (strcmp(dirp->d_name, ".") == 0  || strcmp(dirp->d_name, "..") == 0)
 				continue;		/* ignore dot and dot-dot */
 		strcpy(&fullpath[n], dirp->d_name);	/* append name after "/" */
 		if ((ret = dopath(func)) != 0)		/* recursive */
