@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include<string.h>
 #include<unistd.h>
 #include<sys/wait.h>
@@ -52,6 +53,11 @@ int main()
     }
     if(waitpid(pid,NULL,0)<0)
         perror("wait error");
+    
+/*8.13 函数system的使用*/
+    if(system("./echoall")<0)
+        perror("system() error");
+    
 
     
 
