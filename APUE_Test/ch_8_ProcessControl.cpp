@@ -53,6 +53,10 @@ int main()
     if(waitpid(pid,NULL,0)<0)
         perror("wait error");
 
+    
+
+
+
 
     return 0;
 
