@@ -57,6 +57,11 @@ int main()
 /*8.13 函数system的使用*/
     if(system("./echoall")<0)
         perror("system() error");
+
+/*8.15 获取用户登录名*/
+    printf("Login Name is %s\n",getlogin());
+    
+    
     
 
     
