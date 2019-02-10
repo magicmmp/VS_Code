@@ -60,6 +60,8 @@ int main()
 
 /*8.15 获取用户登录名*/
     printf("Login Name is %s\n",getlogin());
+
+
     
     
     
