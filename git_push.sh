@@ -1,4 +1,5 @@
 #! /bin/bash
+
 #git pull origin master
 git add *
 date_time=$(date)
