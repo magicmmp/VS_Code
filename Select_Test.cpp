@@ -60,7 +60,7 @@ int main()
 		FD_ZERO(&ReadSet);
         for(i=0;i<rocID_List[0];i++)
 		    FD_SET(udp_fd[i],&ReadSet);
-		tv.tv_sec = 1;
+		tv.tv_sec = 10;
 		tv.tv_usec = 0;
 		
 		switch (select(maxFd, &ReadSet, NULL,NULL, &tv)) 
@@ -68,7 +68,8 @@ int main()
 			case -1:  
 				printf("select =-1,error\n");
 				break;  
-			case 0:  
+			case 0:
+                printf("No data.\n");  
 				break;
 			default:
 			{
