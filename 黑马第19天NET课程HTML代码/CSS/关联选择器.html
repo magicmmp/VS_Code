@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <style type="text/css">
+        /*class选择器高于关联选择器*/
+        p em {
+            background-color:red;
+        }
+        .em1 {
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <p><em class="em1">我是em标签</em></p>
+    <em class="em1">我是em标签</em>
+    <em class="em1">我是em标签</em>
+    <em class="em1">我是em标签</em>
+</body>
+</html>
