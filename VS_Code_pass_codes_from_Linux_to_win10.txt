@@ -1,2 +1,0 @@
-VS_Code_pass_codes_from_Linux_to_win10;
-so that the source code edit in linux can be uesd for YouDaoYunBiJi in win 10.

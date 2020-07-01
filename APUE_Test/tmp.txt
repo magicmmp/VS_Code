@@ -1,4 +1,0 @@
-Before fork
-pid=7497,gval=100,lval=101
-Before fork
-pid=7496,gval=8,lval=2
